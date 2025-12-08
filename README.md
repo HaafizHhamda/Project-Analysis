@@ -1,139 +1,67 @@
-# Project Analysis & Dashboard
+# Analisis Perilaku Pelanggan dan Penjualan E-Commerce
 
-**Ringkasan singkat**
+## 📌 Deskripsi Singkat
+Project ini bertujuan untuk menganalisis pola perilaku pelanggan dan performa penjualan pada platform e-commerce menggunakan *E-Commerce Customer Behavior and Sales Dataset*. Fokus utama analisis meliputi tren penjualan bulanan, performa kategori produk, segmentasi berdasarkan usia, distribusi penjualan berdasarkan lokasi, statistik deskriptif penjualan, serta korelasi antara aktivitas pengguna (session duration dan page views) terhadap jumlah pembelian.
 
-Anda adalah seorang Data Analyst yang akan mengerjakan sebuah project untuk menyelesaikan permasalahan seorang client. Client Anda membutuhkan hasil analisa data yang menggunakan statistik dan dashboard visualisasi untuk membantu mereka menyelesaikan masalahnya.
+## 📂 Repository Outline
+```
+├── README.md                   # Gambaran umum project
+├── Notebook.ipynb              # Notebook berisi analisis data & visualisasi
+├── Pengerjaan.csv              # Dataset yang akan diproses
+└── tableau_dashboard_url.txt   # Link dashboard Tableau
+```
 
+## 🧩 Problem Background
+Pertumbuhan e-commerce yang pesat membuat pemahaman terhadap perilaku pelanggan menjadi hal yang krusial. Dataset ini memberikan insight mengenai pola transaksi, demografi pelanggan, kategori produk, dan aktivitas pengguna. Dengan analisis yang tepat, perusahaan dapat meningkatkan strategi pemasaran, menargetkan pelanggan yang tepat, serta mengoptimalkan pengalaman pengguna.
 
----
+## 🎯 Tujuan Project
+- Mengidentifikasi tren penjualan bulanan.
+- Menganalisis penjualan berdasarkan kategori produk.
+- Melihat performa penjualan berdasarkan kelompok usia.
+- Mengukur kontribusi penjualan berdasarkan lokasi.
+- Menyajikan statistik deskriptif penjualan.
+- Mengukur korelasi antara session duration, page views, dan quantity.
 
-## Struktur README
-1. Problem Statement
-2. Objective
-3. Data
-4. Metode / Alur Pengerjaan
-5. Environment
-6. Kesimpulan
-7. Hasil yang Diharapkan
-8. Sumber & Referensi
+## 🗂️ Data
+Dataset berisi informasi seperti:
+- **Order_ID** — Unique identifier per transaksi (Format: ORD_XXXXXX).
+- **Customer_ID** — Unique identifier per pelanggan (Format: CUST_XXXXX).
+- **Date** — Tanggal transaksi (2023-01-01 sampai 2024-03-26).
+- **Age** — Usia pelanggan (18–75).
+- **Gender** — Male, Female, Other.
+- **City** — 10 kota besar di Turki.
+- **Product_Category** — Electronics, Fashion, Home & Garden, Sports, Books, Beauty, Toys, Food.
+- **Unit_Price** — Harga satuan (TRY).
+- **Quantity** — Jumlah unit (1–5).
+- **Discount_Amount** — Diskon total (TRY).
+- **Total_Amount** — Total pembayaran setelah diskon.
+- **Payment_Method** — Credit Card, Debit Card, Digital Wallet, Bank Transfer, COD.
+- **Device_Type** — Mobile, Desktop, Tablet.
+- **Session_Duration_Minutes** — Durasi sesi (1–120 menit).
+- **Pages_Viewed** — Jumlah halaman yang dilihat (1–50).
+- **Is_Returning_Customer** — True/False.
+- **Delivery_Time_Days** — Estimasi pengiriman (1–30 hari).
+- **Customer_Rating** — Rating 1–5.
 
----
+## 🔧 Method
+- Exploratory Data Analysis (EDA)
+- Data Cleaning dan Preprocessing
+- Visualisasi data (Line Chart, Bar Chart, Heatmap)
+- Analisis statistik deskriptif
+- Analisis korelasi antar variabel
 
-## 1. Problem
-
-
-Project ini menganalisis tren penjualan bulanan, performa kategori produk, kelompok usia, dan lokasi, dilengkapi statistik deskriptif serta korelasi perilaku pengguna. Seluruh hasil disajikan melalui dashboard interaktif untuk mendukung insight dan pengambilan keputusan bisnis.
-
----
-## 2. Objectives
-
-
-
-*Pengerjaan* ini dibuat dengan tujuan sebagai berikut :
-
-- Bagaimana tren penjualan bulanan ?.
-
-- Bagaimana penjualan bedasarkan product category?.
-
-- bagaimana penjualan berdasarkan age category?.
-
-- bagaimana penjualan berdasarkan lokasi?.
-
-- bagaimana statistik deskriptif berdasarkan penjualan
-
-- bagaimana korelasi antara session duration minutes, page view dan quantity?
-
-- membuat dashboard 
----
-
-## 3. Data
-*Colums Descriptions*:
-
-- Order_ID
-Unique identifier for each transaction. Format: ORD_XXXXXX (6-digit number)
-- Customer_ID
-Unique identifier for each customer. Format: CUST_XXXXX (5-digit number)
-- Date
-Transaction date when the order was placed. Range: 2023-01-01 to 2024-03-26
-- Age
-Customer's age in years. Range: 18-75 years old
-- Gender
-Customer's gender. Values: Male, Female, Other
-- City
-Customer's city location in Turkey. 10 major cities included
-- Product_Category
-Category of purchased product. 8 categories: Electronics, Fashion, Home & Garden, Sports, Books, Beauty, Toys, Food
-- Unit_Price
-Price per unit of the product in Turkish Lira (TRY). Varies by category
-- Quantity
-Number of units purchased in the transaction. Range: 1-5 units
-- Discount_Amount
-Total discount applied to the order in TRY. Zero if no discount applied
-- Total_Amount
-Final amount paid after discount (Unit_Price × Quantity - Discount_Amount)
-- Payment_Method
-Method used for payment. Options: Credit Card, Debit Card, Digital Wallet, Bank Transfer, Cash on Delivery
-- Device_Type
-Device used to make the purchase. Options: Mobile, Desktop, Tablet
-- Session_Duration_Minutes
-Time spent on website during the session in minutes. Range: 1-120 minutes
-- Pages_Viewed
-Number of pages viewed during the shopping session. Range: 1-50 pages
-- Is_Returning_Customer
-Whether the customer has made previous purchases. Values: True (returning) or False (new customer)
-- Delivery_Time_Days
-Number of days taken to deliver the order. Range: 1-30 days
-- Customer_Rating
-Customer satisfaction rating for the order. Scale: 1-5 stars (1=very dissatisfied, 5=very satisfied)
-
----
-
-## 4. Metode / Alur Pengerjaan
-1. **Load data**
-2. **Data processing**
-3. **Analisis deskriptif**
-4. **Kesimpulan**.
-5. **Make Dashoard**
-
----
-
-## 5. Environment 
-1. Python:
-- **Pandas**
-- **Matplotlib**
-- **Scipy**
-2. Tableu
-
----
-
-## 6. Kesimpulan 
-- Berhasil menampilkan tren penjualan bulanan .
-
-- Berhasil menampilkan penjualan bedasarkan product category.
-
-- Berhasil menampilkan penjualan berdasarkan age category.
-
-- Berhasil menampilkan penjualan berdasarkan lokasi.
-
-- Berhasil menampilkan statistik deskriptif berdasarkan penjualan
-
-- Berhasil menampilkan korelasi antara session duration minutes, page view dan quantity
-
-- Berhasil membuat dashboard sederhana
----
-## 7. Hasil yang Diharapkan 
-- `Pengerjaan.csv` — Data raw dari kaggle.
-- Notebook `pengerjaan.ipynb` - Hasil Objective
-- [Hasil Dasboard](https://public.tableau.com/views/Dashboard_17649132879160/Dashboard321?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-
----
-## 8. Referensi & Sumber Data
-
-Data diambil dari website:  
- [**kaggle.com**](https://www.kaggle.com/datasets/umuttuygurr/e-commerce-customer-behavior-and-sales-analysis-tr)
-
----
+## 🛠️ Tech Stack
+- Python (Pandas, Matplotlib, Scipy)
+- Tableu
+- Jupyter Notebook
 
 
+## 📌 Output Project
+- Laporan analisis data berupa notebook dan visualisasi
+- Insight penjualan berdasarkan kategori, waktu, lokasi, dan demografi
+- Dashboard Tableau interaktif
 
+## 🔖 Referensi Tambahan
+- Kaggle untuk dataset
+- Dokumentasi Pandas & Matplotlib
 
