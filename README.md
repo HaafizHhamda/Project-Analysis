@@ -1,4 +1,4 @@
-# Judul Project: Analisis Perilaku Pelanggan dan Penjualan E-Commerce
+# Analisis Perilaku Pelanggan dan Penjualan E-Commerce
 
 ## 📌 Deskripsi Singkat
 Project ini bertujuan untuk menganalisis pola perilaku pelanggan dan performa penjualan pada platform e-commerce menggunakan *E-Commerce Customer Behavior and Sales Dataset*. Fokus utama analisis meliputi tren penjualan bulanan, performa kategori produk, segmentasi berdasarkan usia, distribusi penjualan berdasarkan lokasi, statistik deskriptif penjualan, serta korelasi antara aktivitas pengguna (session duration dan page views) terhadap jumlah pembelian.
