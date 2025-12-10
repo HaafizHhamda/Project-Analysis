@@ -1,7 +1,7 @@
 # Analisis Perilaku Pelanggan dan Penjualan E-Commerce
 
 ##  Deskripsi Singkat
-Project ini bertujuan untuk menganalisis pola perilaku pelanggan dan performa penjualan pada platform e-commerce menggunakan *E-Commerce Customer Behavior and Sales Dataset*. Fokus utama analisis meliputi tren penjualan bulanan, performa kategori produk, segmentasi berdasarkan usia, distribusi penjualan berdasarkan lokasi, statistik deskriptif penjualan, serta korelasi antara aktivitas pengguna (session duration dan page views) terhadap jumlah pembelian.
+Project ini menyajikan analisis komprehensif terhadap tren penjualan bulanan, performa kategori produk, segmentasi usia, serta persebaran lokasi pelanggan. Setiap temuan diperkuat dengan statistik deskriptif dan analisis korelasi untuk memahami perilaku pengguna secara lebih mendalam. Selain itu, repositori ini juga dilengkapi proses forecasting penjualan per produk guna membantu bisnis menyusun strategi yang lebih tepat dan berbasis data. Seluruh hasil divisualisasikan melalui dashboard interaktif yang memudahkan pengambilan keputusan secara cepat dan akurat.
 
 ##  Repository Outline
 ```
