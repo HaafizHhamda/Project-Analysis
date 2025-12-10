@@ -7,7 +7,9 @@ Project ini bertujuan untuk menganalisis pola perilaku pelanggan dan performa pe
 ```
 ├── README.md                   # Gambaran umum project
 ├── Notebook.ipynb              # Notebook berisi analisis data & visualisasi
+├── Notebook_Forecasting.ipynb  # Notebook Forecasting 
 ├── Pengerjaan.csv              # Dataset yang akan diproses
+├── Forecasting.csv             # Dataset yang akan diproses
 └── tableau_dashboard_url.txt   # Link dashboard Tableau
 ```
 
