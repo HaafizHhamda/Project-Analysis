@@ -1,4 +1,4 @@
-# Analisis Perilaku Pelanggan dan Penjualan E-Commerce
+# Sales Analysis & Forecasting
 
 ##  Deskripsi Singkat
 Project ini menyajikan analisis komprehensif terhadap tren penjualan bulanan, performa kategori produk, segmentasi usia, serta persebaran lokasi pelanggan. Setiap temuan diperkuat dengan statistik deskriptif dan analisis korelasi untuk memahami perilaku pengguna secara lebih mendalam. Selain itu, repositori ini juga dilengkapi proses forecasting penjualan per produk guna membantu bisnis menyusun strategi yang lebih tepat dan berbasis data. Seluruh hasil divisualisasikan melalui dashboard interaktif yang memudahkan pengambilan keputusan secara cepat dan akurat.
@@ -7,7 +7,7 @@ Project ini menyajikan analisis komprehensif terhadap tren penjualan bulanan, pe
 ```
 ├── README.md                   # Gambaran umum project
 ├── Notebook.ipynb              # Notebook berisi analisis data & visualisasi
-├── Notebook_Forecasting.ipynb  # Notebook Forecasting 
+├── Notebook_Forecasting.ipynb  # Notebook analysis Forecasting 
 ├── Pengerjaan.csv              # Dataset yang akan diproses
 ├── Forecasting.csv             # Dataset yang akan diproses
 └── tableau_dashboard_url.txt   # Link dashboard Tableau
